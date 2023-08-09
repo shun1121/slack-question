@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",           // コンパイル後のターゲットバージョン (Node.jsの場合はES6を推奨)
+    "module": "CommonJS",      // モジュールの形式 (Node.jsではCommonJSを使用)
+    "outDir": "dist",          // コンパイル結果の出力先ディレクトリ
+    "rootDir": "src",          // ソースコードのルートディレクトリ
+    "strict": true,            // 厳格な型チェックを有効にする
+    "esModuleInterop": true    // CommonJSモジュールをESモジュールとしてインポートする
+  },
+  "include": [
+    "src/**/*.ts"             // TypeScriptファイルの場所を指定 (srcディレクトリ内の全ての.tsファイル)
+  ],
+  "exclude": [
+    "node_modules",           // コンパイル対象外のディレクトリ
+    "**/*.spec.ts"            // テストファイルを除外する場合など
+  ]
+}
